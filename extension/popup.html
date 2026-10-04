@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      margin: 0;
+      padding: 14px 16px;
+      font: 13px/1.5 -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      color: #1f1f1f;
+    }
+    #title {
+      font-weight: 600;
+      margin-bottom: 10px;
+      overflow-wrap: anywhere;
+    }
+    button {
+      width: 100%;
+      padding: 8px 0;
+      border: 0;
+      border-radius: 18px;
+      background: #0b57d0;
+      color: #fff;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:disabled {
+      background: #c4c7c5;
+      cursor: default;
+    }
+    #status {
+      margin-top: 10px;
+      white-space: pre-wrap;
+    }
+    #status:empty {
+      display: none;
+    }
+    .warn {
+      margin-top: 8px;
+      color: #8a4b00;
+      white-space: pre-wrap;
+    }
+    .error {
+      color: #b3261e;
+    }
+  </style>
+</head>
+<body>
+  <div id="title">読み込み中…</div>
+  <button id="save" disabled>ファイルに保存</button>
+  <div id="status"></div>
+  <div id="warnings" class="warn"></div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
