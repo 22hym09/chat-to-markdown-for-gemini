@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="common.css">
+<style>
+  .page { position: absolute; left: 0; top: 0; width: 1200px; }
+  /* ポップアップは extension/popup.html と同じ見た目 */
+  .popup {
+    position: absolute;
+    right: 28px; top: 18px;
+    width: 340px;
+    padding: 18px 20px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .popup .t { font-weight: 600; margin-bottom: 12px; }
+  .popup button {
+    width: 100%; padding: 10px 0; border: 0; border-radius: 20px;
+    background: #0b57d0; color: #fff; font: inherit; font-weight: 600;
+  }
+  .popup .s { margin-top: 12px; }
+</style>
+</head>
+<body>
+  <div class="caption">
+    <img src="../../extension/icons/icon128.png" alt="">
+    <div>
+      <h1>ボタン1つで、Gemini の会話を Markdown に</h1>
+      <p>自分の会話でも共有リンクでも。画像も原寸でまとめて保存します</p>
+    </div>
+  </div>
+  <div class="stage">
+    <img class="page" src="gemini-page.png" alt="">
+    <div class="popup">
+      <div class="t">猫の月面宇宙服画像生成</div>
+      <button>ファイルに保存</button>
+      <div class="s">保存しました（1 往復、画像 1 枚）</div>
+    </div>
+  </div>
+</body>
+</html>

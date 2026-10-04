@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="common.css">
+<style>
+  .stage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding: 36px 40px;
+    background: #f4f1de;
+    align-content: start;
+  }
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 26px;
+    min-height: 170px;
+  }
+  .card h3 { font-size: 24px; margin-bottom: 8px; }
+  .card h3 span { color: #e07a5f; margin-right: 8px; }
+  .card p { font-size: 18px; line-height: 1.65; color: #44525a; }
+</style>
+</head>
+<body>
+  <div class="caption">
+    <img src="../../extension/icons/icon128.png" alt="">
+    <div>
+      <h1>長い会話も、取りこぼさずに</h1>
+      <p>画面に表示されていない部分も含めて、最初から最後まで書き出します</p>
+    </div>
+  </div>
+  <div class="stage">
+    <div class="card">
+      <h3><span>●</span>会話を公開しなくていい</h3>
+      <p>自分の会話のページからそのまま書き出せます。共有リンクのページでも使えます。</p>
+    </div>
+    <div class="card">
+      <h3><span>●</span>画像を原寸で</h3>
+      <p>添付した画像も Gemini が作った画像も、Markdown とまとめて zip で保存します。</p>
+    </div>
+    <div class="card">
+      <h3><span>●</span>Canvas・Deep Research</h3>
+      <p>Canvas の最終版、Deep Research の調査計画と報告書（出典の一覧つき）も書き出します。</p>
+    </div>
+    <div class="card">
+      <h3><span>●</span>外部に送らない</h3>
+      <p>処理はすべてブラウザの中だけ。会話の中身を開発者や第三者に送ることはありません。</p>
+    </div>
+    <div class="card">
+      <h3><span>●</span>マップ・Gem・作った曲も</h3>
+      <p>地図や地名のリンク、Gem の名前、Gemini が作った曲の名前も、分かる形で残します。</p>
+    </div>
+    <div class="card">
+      <h3><span>●</span>ソースコードを公開</h3>
+      <p>中身は GitHub で誰でも確認できます。無料で、広告もありません。</p>
+    </div>
+  </div>
+</body>
+</html>

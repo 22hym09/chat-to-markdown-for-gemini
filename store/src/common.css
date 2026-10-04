@@ -1,0 +1,29 @@
+/* ストア用画像の共通の見た目。アイコンと同じ配色（紺 #2f3e46、生成り #f4f1de、朱 #e07a5f） */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1280px; height: 800px; overflow: hidden; }
+body {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  color: #1f2a30;
+  background: #2f3e46;
+}
+.caption {
+  height: 132px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 0 56px;
+  color: #f4f1de;
+}
+.caption img { width: 64px; height: 64px; }
+.caption h1 { font-size: 40px; font-weight: 700; letter-spacing: 0.02em; }
+.caption p { font-size: 20px; opacity: 0.85; margin-top: 6px; }
+.stage {
+  position: absolute;
+  left: 40px; right: 40px; top: 132px; bottom: 0;
+  background: #f9f9f9;
+  border-radius: 18px 18px 0 0;
+  overflow: hidden;
+}
+.mono {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+}
