@@ -2,81 +2,56 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="common.css">
+<title>書き出される Markdown</title>
+<!-- Claude Design のキャンバスから書き出したもの。PNG にする手順は store/listing.md を参照 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&amp;family=M+PLUS+1+Code:wght@400;600&amp;display=swap">
 <style>
-  .stage { display: flex; }
-  .files {
-    width: 300px;
-    padding: 28px 24px;
-    background: #eef0ee;
-    font-size: 15px;
-    line-height: 2;
-  }
-  .files h2 { font-size: 14px; color: #5b6b73; font-weight: 600; margin-bottom: 8px; }
-  .files .d { padding-left: 18px; }
-  .files .sel { background: #fff; border-radius: 6px; padding: 0 8px; margin-left: -8px; }
-  .md {
-    flex: 1;
-    padding: 24px 32px;
-    font-size: 14px;
-    line-height: 1.72;
-    white-space: pre;
-    overflow: hidden;
-    background: #fff;
-  }
-  .k { color: #9a4d3a; }      /* 見出し */
-  .q { color: #4a6b5a; }      /* 引用（質問） */
-  .m { color: #8a8f93; }      /* 先頭の情報 */
-  .b { font-weight: 700; }
-  .l { color: #2f6db5; }      /* リンク */
+body{margin:0}
+a{color:#1673AD}a:hover{color:#0F5480}
 </style>
 </head>
 <body>
-  <div class="caption">
-    <img src="../../extension/icons/icon128.png" alt="">
-    <div>
-      <h1>表・コード・数式・Deep Research の出典まで</h1>
-      <p>往復ごとに見出しを付けて整理。ChatGPT や Claude にそのまま渡せます</p>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; background: #E8F3FA; font-family: 'Zen Kaku Gothic New', sans-serif; color: #0E2A3B; display: flex; gap: 56px; padding: 80px 64px 0 80px; overflow: hidden">
+  <div style="width: 360px; flex-shrink: 0; display: flex; flex-direction: column; gap: 28px">
+    <h1 style="margin: 0; font-size: 44px; line-height: 1.35; font-weight: 900">見出しも、表も、<br>出典も、<br>崩さずに。</h1>
+    <p style="margin: 0; font-size: 18px; line-height: 1.8; color: #36505F">AI がそのまま読める、<br>整理された Markdown で保存します。</p>
+    <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 8px">
+      <div style="display: flex; gap: 14px; align-items: flex-start">
+        <span style="width: 28px; height: 28px; flex-shrink: 0; border-radius: 999px; background: #1673AD; color: #FFFFFF; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center">1</span>
+        <div style="font-size: 17px; line-height: 1.6"><b style="font-weight: 700">往復ごとに見出し</b><br><span style="color: #36505F">目次から話題を探せます</span></div>
+      </div>
+      <div style="display: flex; gap: 14px; align-items: flex-start">
+        <span style="width: 28px; height: 28px; flex-shrink: 0; border-radius: 999px; background: #1673AD; color: #FFFFFF; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center">2</span>
+        <div style="font-size: 17px; line-height: 1.6"><b style="font-weight: 700">表・コード・数式はそのまま</b><br><span style="color: #36505F">Gemini が書いた形を崩しません</span></div>
+      </div>
+      <div style="display: flex; gap: 14px; align-items: flex-start">
+        <span style="width: 28px; height: 28px; flex-shrink: 0; border-radius: 999px; background: #1673AD; color: #FFFFFF; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center">3</span>
+        <div style="font-size: 17px; line-height: 1.6"><b style="font-weight: 700">Deep Research は出典つき</b><br><span style="color: #36505F">番号とリンクの一覧を残します</span></div>
+      </div>
     </div>
   </div>
-  <div class="stage">
-    <div class="files">
-      <h2>書き出したファイル</h2>
-      <div class="sel">📄 全固体電池の実用化状況の…</div>
-      <div>📦 猫の月面宇宙服画像生成.zip</div>
-      <div class="d">📄 猫の月面宇宙服画像生成.md</div>
-      <div class="d">📁 images</div>
-      <div class="d" style="padding-left:36px">🖼 01-gemini-1.jpg</div>
-    </div>
-<div class="md mono"><span class="m">---
+  <div style="flex: 1; display: flex; flex-direction: column; min-width: 0">
+    <div style="align-self: flex-start; font-size: 14px; font-weight: 500; padding: 10px 18px; background: #FFFFFF; border-radius: 12px 12px 0 0; color: #36505F">全固体電池の実用化状況のまとめ.md</div>
+    <div style="flex: 1; background: #FFFFFF; border-radius: 0 16px 0 0; padding: 28px 32px; font-family: 'M PLUS 1 Code', monospace; font-size: 14px; line-height: 1.85; white-space: pre; overflow: hidden; color: #0E2A3B"><div style="color: #7C93A0">---
 title: "全固体電池の実用化状況のまとめ"
 model: "3.5 Flash-Lite"
----</span>
-
-<span class="k"># 全固体電池の実用化状況のまとめ</span>
-
-<span class="k">## 2. リサーチを開始</span>
-
-<span class="q">&gt; <span class="b">**ユーザー**</span>
-&gt; リサーチを開始</span>
-
-<span class="b">**Gemini**</span>
-
-<span class="b">**Deep Research の報告書：全固体電池の実用化状況調査**</span>
-
-<span class="k">### 2024年以降における全固体電池の実用化動向と構造的分析</span>
-
-<span class="k">#### 概要と市場における現在地</span>
-
-2025年に世界で出荷された全固体電池はわずか0.05GWhにとどまり … [1]
-
-| 指標 / カテゴリ    | 2025年実績 / 予測 | 2034〜2035年予測 |
-| :---               | :---              | :---             |
-
-<span class="b">**出典**</span>
-
-1. <span class="l">[全固体電池の目標年は動き続けている｜ZERO 科学と事業のあいだ](https://note.com/…)</span>
-2. <span class="l">[CAGR 32.5％、電気自動車・次世代モビリティ向け全固体電池の…](https://www.atpress.ne.jp/…)</span></div>
+---</div>
+<div style="font-weight: 600"># 全固体電池の実用化状況のまとめ</div>
+<div style="display: flex; align-items: center; gap: 10px"><span style="font-weight: 600">## 2. リサーチを開始</span><span style="font-family: 'Zen Kaku Gothic New', sans-serif; width: 22px; height: 22px; border-radius: 999px; background: #1673AD; color: #FFFFFF; font-size: 12px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center">1</span></div>
+<div style="color: #4B6B7A">&gt; **ユーザー**
+&gt; リサーチを開始</div>
+<div style="font-weight: 600">**Gemini**</div>
+<div style="font-weight: 600">**Deep Research の報告書：全固体電池の実用化状況調査**</div>
+<div style="font-weight: 600">### 2024年以降における全固体電池の実用化動向</div>
+<div>2025年に世界で出荷された全固体電池は 0.05GWh にとどまり … [1]</div>
+<div style="display: flex; align-items: flex-start; gap: 10px"><span>| 指標            | 2025年実績 | 2034〜2035年予測 |
+| :---            | :---       | :---             |
+| 市場規模        | …          | …                |</span><span style="font-family: 'Zen Kaku Gothic New', sans-serif; width: 22px; height: 22px; border-radius: 999px; background: #1673AD; color: #FFFFFF; font-size: 12px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center">2</span></div>
+<div style="display: flex; align-items: center; gap: 10px"><span style="font-weight: 600">**出典**</span><span style="font-family: 'Zen Kaku Gothic New', sans-serif; width: 22px; height: 22px; border-radius: 999px; background: #1673AD; color: #FFFFFF; font-size: 12px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center">3</span></div>
+<div style="color: #1673AD">1. [全固体電池の目標年は動き続けている](https://note.com/…)
+2. [CAGR 32.5％、次世代モビリティ向け全固体電池…](https://www.atpress.ne.jp/…)</div></div>
   </div>
+</div>
 </body>
 </html>

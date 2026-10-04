@@ -15,6 +15,19 @@
 - サポート：https://github.com/22hym09/chat-to-markdown-for-gemini/issues
 - プライバシーポリシー：https://22hym09.github.io/chat-to-markdown-for-gemini/privacy
 
+## 画像の作り直し方
+
+画像の元は `store/src/*.html`（Claude Design のキャンバスから書き出したもの）。直したら、次のように Chrome で PNG にする。`--virtual-time-budget` は Web フォントの読み込みを待つため。
+
+```bash
+cd store
+C="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+for n in screenshot1 screenshot2 screenshot3; do "$C" --headless --hide-scrollbars --force-device-scale-factor=1 --virtual-time-budget=8000 --window-size=1280,800 --screenshot="$PWD/$n.png" "file://$PWD/src/$n.html"; done
+"$C" --headless --hide-scrollbars --force-device-scale-factor=1 --virtual-time-budget=8000 --window-size=440,280 --screenshot="$PWD/promo-small.png" "file://$PWD/src/promo-small.html"
+```
+
+配色：地 #E8F3FA、文字 #0E2A3B、補助の文字 #36505F、差し色 #1E88C8（ボタンなど白い文字を載せる所は #1673AD）。書体は Zen Kaku Gothic New と M PLUS 1 Code。
+
 ## 概要（132文字以内）
 
 Gemini の会話を、画像も含めて Markdown ファイルに書き出します。非公式の拡張機能で、Google とは関係ありません。

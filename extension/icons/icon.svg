@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- 吹き出しの中に Markdown の記号「M↓」。Gemini や Google の意匠は使わない -->
-  <rect x="4" y="4" width="120" height="120" rx="26" fill="#2f3e46"/>
-  <path d="M24 30 h80 a10 10 0 0 1 10 10 v40 a10 10 0 0 1 -10 10 h-46 l-18 16 v-16 h-16 a10 10 0 0 1 -10 -10 v-40 a10 10 0 0 1 10 -10 z" fill="#f4f1de"/>
-  <path d="M30 78 v-30 h9 l9 12 l9 -12 h9 v30 h-9 v-17 l-9 12 l-9 -12 v17 z" fill="#2f3e46"/>
-  <path d="M80 48 h10 v16 h9 l-14 16 l-14 -16 h9 z" fill="#e07a5f"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <!-- 空色の角丸に、白い吹き出しと Markdown の記号「M↓」。Gemini や Google の意匠は使わない -->
+  <rect width="96" height="96" rx="22" fill="#1E88C8"/>
+  <path d="M20 24h56a6 6 0 0 1 6 6v30a6 6 0 0 1-6 6H44l-14 12V66H20a6 6 0 0 1-6-6V30a6 6 0 0 1 6-6z" fill="#FFFFFF"/>
+  <path d="M26 56V34h7l6 9 6-9h7v22h-7V45l-6 8-6-8v11z" fill="#0E2A3B"/>
+  <path d="M62 34h7v11h6L65.5 57 56 45h6z" fill="#1E88C8"/>
 </svg>

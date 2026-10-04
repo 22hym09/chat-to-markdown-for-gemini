@@ -2,60 +2,53 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="common.css">
+<title>できること</title>
+<!-- Claude Design のキャンバスから書き出したもの。PNG にする手順は store/listing.md を参照 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&amp;display=swap">
 <style>
-  .stage {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 22px;
-    padding: 36px 40px;
-    background: #f4f1de;
-    align-content: start;
-  }
-  .card {
-    background: #fff;
-    border-radius: 14px;
-    padding: 22px 26px;
-    min-height: 170px;
-  }
-  .card h3 { font-size: 24px; margin-bottom: 8px; }
-  .card h3 span { color: #e07a5f; margin-right: 8px; }
-  .card p { font-size: 18px; line-height: 1.65; color: #44525a; }
+body{margin:0}
+a{color:#1673AD}a:hover{color:#0F5480}
 </style>
 </head>
 <body>
-  <div class="caption">
-    <img src="../../extension/icons/icon128.png" alt="">
-    <div>
-      <h1>長い会話も、取りこぼさずに</h1>
-      <p>画面に表示されていない部分も含めて、最初から最後まで書き出します</p>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; background: #E8F3FA; font-family: 'Zen Kaku Gothic New', sans-serif; color: #0E2A3B; padding: 76px 80px 0; display: flex; flex-direction: column; gap: 44px; overflow: hidden">
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 40px">
+    <h1 style="margin: 0; font-size: 46px; line-height: 1.35; font-weight: 900">長い会話も、画像も、<br>取りこぼさない。</h1>
+    <p style="margin: 0 0 6px; font-size: 18px; line-height: 1.8; color: #36505F; text-align: right">画面に表示されていない前半も含めて、<br>最初から最後まで書き出します。</p>
+  </div>
+  <div style="flex: 1; background: #FFFFFF; border-radius: 20px 20px 0 0; padding: 12px 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 48px">
+    <div style="padding: 36px 0 30px; border-bottom: 1px solid #D6E6F0; display: flex; flex-direction: column; gap: 12px">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1673AD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>
+      <div style="font-size: 21px; font-weight: 700">会話を公開しなくていい</div>
+      <div style="font-size: 16px; line-height: 1.7; color: #36505F">自分の会話のページからそのまま書き出せます。共有リンクのページでも使えます。</div>
+    </div>
+    <div style="padding: 36px 0 30px; border-bottom: 1px solid #D6E6F0; display: flex; flex-direction: column; gap: 12px">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1673AD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="9" cy="10" r="1.6"></circle><path d="M21 16l-5-5-9 9"></path></svg>
+      <div style="font-size: 21px; font-weight: 700">画像を原寸で</div>
+      <div style="font-size: 16px; line-height: 1.7; color: #36505F">添付した画像も Gemini が作った画像も、Markdown と一緒に zip で保存します。</div>
+    </div>
+    <div style="padding: 36px 0 30px; border-bottom: 1px solid #D6E6F0; display: flex; flex-direction: column; gap: 12px">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1673AD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path><path d="M9 13h6"></path><path d="M9 17h6"></path></svg>
+      <div style="font-size: 21px; font-weight: 700">Canvas・Deep Research</div>
+      <div style="font-size: 16px; line-height: 1.7; color: #36505F">Canvas の最終版、Deep Research の調査計画と報告書も、出典の一覧つきで。</div>
+    </div>
+    <div style="padding: 32px 0; display: flex; flex-direction: column; gap: 12px">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1673AD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
+      <div style="font-size: 21px; font-weight: 700">外部に送らない</div>
+      <div style="font-size: 16px; line-height: 1.7; color: #36505F">処理はブラウザの中だけ。会話の中身を開発者や第三者に送ることはありません。</div>
+    </div>
+    <div style="padding: 32px 0; display: flex; flex-direction: column; gap: 12px">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1673AD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"></path><circle cx="12" cy="10" r="2.2"></circle></svg>
+      <div style="font-size: 21px; font-weight: 700">マップ・Gem・作った曲も</div>
+      <div style="font-size: 16px; line-height: 1.7; color: #36505F">地図や地名のリンク、Gem の名前、Gemini が作った曲の名前も残します。</div>
+    </div>
+    <div style="padding: 32px 0; display: flex; flex-direction: column; gap: 12px">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1673AD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 8l-4 4 4 4"></path><path d="M15 8l4 4-4 4"></path><path d="M13 6l-2 12"></path></svg>
+      <div style="font-size: 21px; font-weight: 700">無料・ソースコード公開</div>
+      <div style="font-size: 16px; line-height: 1.7; color: #36505F">広告はありません。中身は GitHub で誰でも確かめられます。</div>
     </div>
   </div>
-  <div class="stage">
-    <div class="card">
-      <h3><span>●</span>会話を公開しなくていい</h3>
-      <p>自分の会話のページからそのまま書き出せます。共有リンクのページでも使えます。</p>
-    </div>
-    <div class="card">
-      <h3><span>●</span>画像を原寸で</h3>
-      <p>添付した画像も Gemini が作った画像も、Markdown とまとめて zip で保存します。</p>
-    </div>
-    <div class="card">
-      <h3><span>●</span>Canvas・Deep Research</h3>
-      <p>Canvas の最終版、Deep Research の調査計画と報告書（出典の一覧つき）も書き出します。</p>
-    </div>
-    <div class="card">
-      <h3><span>●</span>外部に送らない</h3>
-      <p>処理はすべてブラウザの中だけ。会話の中身を開発者や第三者に送ることはありません。</p>
-    </div>
-    <div class="card">
-      <h3><span>●</span>マップ・Gem・作った曲も</h3>
-      <p>地図や地名のリンク、Gem の名前、Gemini が作った曲の名前も、分かる形で残します。</p>
-    </div>
-    <div class="card">
-      <h3><span>●</span>ソースコードを公開</h3>
-      <p>中身は GitHub で誰でも確認できます。無料で、広告もありません。</p>
-    </div>
-  </div>
+</div>
 </body>
 </html>
